@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="appli.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="appli.js"></script>
+    <title>Bienvenue dans mon application de communication </title>
+</head>
+<body>
+    <main>
+        <!-- Section d'inscription -->
+        <div id="register">
+            <h1>Ton Nom :</h1>
+            <form onsubmit="register(); return false;" accept-charset="UTF-8">
+                <div class="input-container">
+                    <i class="fas fa-user"></i> <!-- Icône de personne -->
+                    <input type="text" name="name" id="name" placeholder="Veuillez entrer votre nom" required>
+                </div>
+                <input type="submit" value="Rejoindre !">
+            </form>
+        </div>
+
+        <!-- Section pour se connecter à un autre utilisateur -->
+        <div id="userAdd" style="display: none;">
+            <h1>Se Connecter à un autre utilisateur :</h1>
+            <form onsubmit="appelUser(); return false;" accept-charset="UTF-8">
+                <div class="input-container">
+                    <i class="fas fa-link"></i> <!-- Icône de lien -->
+                    <input type="text" name="name" id="add" placeholder="Entrez l'ID de l'utilisateur" required>
+                </div>
+                <input type="submit" value="Se connecter">
+            </form>
+        </div>
+
+        <!-- Section pour partager son écran -->
+        <div id="userShare" style="display: none;">
+            <h1>Partager son écran :</h1>
+            <form onsubmit="addScreenShare(); return false;" accept-charset="UTF-8">
+                <div class="input-container">
+                    <i class="fas fa-desktop"></i> <!-- Icône d'écran -->
+                    <input type="text" name="name" id="share" placeholder="Entrez l'ID de l'utilisateur" required>
+                </div>
+                <input type="submit" value="Partager">
+            </form>
+        </div>
+
+        <!-- Liste des participants -->
+        <div id="participants">
+            <h1>Participants :</h1>
+             
+        </div>
+    </main>
+</body>
+</html>

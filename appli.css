@@ -1,0 +1,140 @@
+/* 🔹 Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🔹 Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Dégradé bleu foncé */
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔹 Conteneur principal */
+main {
+    max-width: 850px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15); /* Fond semi-transparent */
+    backdrop-filter: blur(12px); /* Effet verre flouté */
+    color: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: center; /* Centrage du contenu */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 🔹 Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔹 Titre principal */
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.4);
+}
+
+/* 🔹 Sections */
+h2 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 6px;
+}
+
+/* 🔹 Champs de saisie */
+input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #fff;
+    box-shadow: 0 0 12px rgba(255, 204, 0, 0.8);
+}
+
+/* 🔹 Boutons */
+input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #ffdd44;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.8);
+}
+
+/* 🔹 Conteneur vidéo */
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.video-container video {
+    width: 280px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #ffcc00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.video-container video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 204, 0, 0.7);
+}
+
+/* 🔹 Cartes des participants */
+.participant-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.participant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.5);
+}
